@@ -9,6 +9,6 @@ internal class BookDto
 
     public static BookDto ToBookDto(Book book)
     {
-        return new BookDto { Id = book.Id, Author = book.Author, Title = book.Author, Price = book.Price };
+        return new BookDto { Id = book.Id, Author = book.Author, Title = book.Title, Price = book.Price };
     }
 }
