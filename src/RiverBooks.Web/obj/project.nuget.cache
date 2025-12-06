@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4nVqmPfCtOk=",
+  "dgSpecHash": "A51mrwpZhcE=",
   "success": true,
   "projectFilePath": "E:\\Code\\RiverBooks\\src\\RiverBooks.Web\\RiverBooks.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lezgi\\.nuget\\packages\\ardalis.guardclauses\\5.0.0\\ardalis.guardclauses.5.0.0.nupkg.sha512",
     "C:\\Users\\lezgi\\.nuget\\packages\\fastendpoints\\7.2.0-beta.7\\fastendpoints.7.2.0-beta.7.nupkg.sha512",
     "C:\\Users\\lezgi\\.nuget\\packages\\fastendpoints.attributes\\7.2.0-beta.7\\fastendpoints.attributes.7.2.0-beta.7.nupkg.sha512",
     "C:\\Users\\lezgi\\.nuget\\packages\\fastendpoints.core\\7.2.0-beta.7\\fastendpoints.core.7.2.0-beta.7.nupkg.sha512",

@@ -2,7 +2,7 @@
 
 namespace RiverBooks.Books;
 
-public class ListBooksEndpoint(IBookService bookService) : EndpointWithoutRequest<ListBooksResponse>
+internal class ListBooksEndpoint(IBookService bookService) : EndpointWithoutRequest<ListBooksResponse>
 {
     public override void Configure()
     {
@@ -12,7 +12,7 @@ public class ListBooksEndpoint(IBookService bookService) : EndpointWithoutReques
 
     public override async Task HandleAsync(CancellationToken ct)
     {
-        var books = bookService.ListBooks();
+        var books = await bookService.ListBooksAsync();
 
         await Send.OkAsync(new ListBooksResponse { Books = books }, ct);
     }

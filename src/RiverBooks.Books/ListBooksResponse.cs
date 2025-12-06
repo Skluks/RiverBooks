@@ -1,6 +1,6 @@
 ﻿namespace RiverBooks.Books;
 
-public class ListBooksResponse
+internal class ListBooksResponse
 {
     public List<BookDto> Books { get; set; } = [];
 }

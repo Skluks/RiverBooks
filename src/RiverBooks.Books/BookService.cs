@@ -2,10 +2,19 @@
 
 internal class BookService : IBookService
 {
-    public List<BookDto> ListBooks()
-    {
-        var books = new List<BookDto> { new(Guid.NewGuid(), "Potter", "Harry") };
+    private readonly IBookRepository _bookRepository;
 
-        return books;
+    public BookService(IBookRepository bookRepository)
+    {
+        _bookRepository = bookRepository;
+    }
+
+    public async Task<List<BookDto>> ListBooksAsync()
+    {
+        var books = await _bookRepository.ListAsync();
+
+        var bookDtos = books.Select(BookDto.ToBookDto).ToList();
+
+        return bookDtos;
     }
 }
