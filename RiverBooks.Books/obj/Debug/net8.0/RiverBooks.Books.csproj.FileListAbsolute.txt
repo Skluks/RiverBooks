@@ -1,0 +1,12 @@
+E:\Code\RiverBooks\RiverBooks.Books\bin\Debug\net8.0\RiverBooks.Books.deps.json
+E:\Code\RiverBooks\RiverBooks.Books\bin\Debug\net8.0\RiverBooks.Books.dll
+E:\Code\RiverBooks\RiverBooks.Books\bin\Debug\net8.0\RiverBooks.Books.pdb
+E:\Code\RiverBooks\RiverBooks.Books\obj\Debug\net8.0\RiverBooks.Books.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\RiverBooks\RiverBooks.Books\obj\Debug\net8.0\RiverBooks.Books.AssemblyInfoInputs.cache
+E:\Code\RiverBooks\RiverBooks.Books\obj\Debug\net8.0\RiverBooks.Books.AssemblyInfo.cs
+E:\Code\RiverBooks\RiverBooks.Books\obj\Debug\net8.0\RiverBooks.Books.csproj.CoreCompileInputs.cache
+E:\Code\RiverBooks\RiverBooks.Books\obj\Debug\net8.0\RiverBooks.Books.dll
+E:\Code\RiverBooks\RiverBooks.Books\obj\Debug\net8.0\refint\RiverBooks.Books.dll
+E:\Code\RiverBooks\RiverBooks.Books\obj\Debug\net8.0\RiverBooks.Books.pdb
+E:\Code\RiverBooks\RiverBooks.Books\obj\Debug\net8.0\ref\RiverBooks.Books.dll
+E:\Code\RiverBooks\RiverBooks.Books\obj\Debug\net8.0\RiverBooks.Books.csproj.AssemblyReference.cache

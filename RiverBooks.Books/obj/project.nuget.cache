@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "phdKwZlej78=",
+  "success": true,
+  "projectFilePath": "E:\\Code\\RiverBooks\\RiverBooks.Books\\RiverBooks.Books.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lezgi\\.nuget\\packages\\fastendpoints\\7.2.0-beta.7\\fastendpoints.7.2.0-beta.7.nupkg.sha512",
+    "C:\\Users\\lezgi\\.nuget\\packages\\fastendpoints.attributes\\7.2.0-beta.7\\fastendpoints.attributes.7.2.0-beta.7.nupkg.sha512",
+    "C:\\Users\\lezgi\\.nuget\\packages\\fastendpoints.core\\7.2.0-beta.7\\fastendpoints.core.7.2.0-beta.7.nupkg.sha512",
+    "C:\\Users\\lezgi\\.nuget\\packages\\fastendpoints.messaging\\7.2.0-beta.7\\fastendpoints.messaging.7.2.0-beta.7.nupkg.sha512",
+    "C:\\Users\\lezgi\\.nuget\\packages\\fastendpoints.messaging.core\\7.2.0-beta.7\\fastendpoints.messaging.core.7.2.0-beta.7.nupkg.sha512",
+    "C:\\Users\\lezgi\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\lezgi\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\lezgi\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
+    "C:\\Users\\lezgi\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\lezgi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\lezgi\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\lezgi\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
