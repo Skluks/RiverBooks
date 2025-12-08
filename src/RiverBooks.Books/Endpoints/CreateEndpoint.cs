@@ -2,11 +2,11 @@
 
 namespace RiverBooks.Books.Endpoints;
 
-internal class CreateBookEndpoint : Endpoint<CreateBookRequest, BookDto>
+internal class CreateEndpoint : Endpoint<CreateBookRequest, BookDto>
 {
     private readonly IBookService _bookService;
 
-    public CreateBookEndpoint(IBookService bookService)
+    public CreateEndpoint(IBookService bookService)
     {
         _bookService = bookService;
     }
