@@ -4,7 +4,7 @@ Accept: application/json
 ###
 @RiverBooks_HostAddress = http://localhost:5128
 
-GET {{RiverBooks_HostAddress}}/weatherforecast/
+GET {{RiverBooks_HostAddress}}/books/
 Accept: application/json
 
 ###
