@@ -2,7 +2,7 @@
 
 namespace RiverBooks.Books.Endpoints;
 
-internal class ListEndpoint : EndpointWithoutRequest<ListBooksResponse>
+internal class ListEndpoint : EndpointWithoutRequest<Models.ListBooksResponse>
 {
     private readonly IBookService _bookService;
 
@@ -21,6 +21,6 @@ internal class ListEndpoint : EndpointWithoutRequest<ListBooksResponse>
     {
         var books = await _bookService.ListAsync();
 
-        await Send.OkAsync(new ListBooksResponse { Books = books }, ct);
+        await Send.OkAsync(new Models.ListBooksResponse { Books = books }, ct);
     }
 }

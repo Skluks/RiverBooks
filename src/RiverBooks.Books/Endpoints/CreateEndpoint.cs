@@ -2,7 +2,7 @@
 
 namespace RiverBooks.Books.Endpoints;
 
-internal class CreateEndpoint : Endpoint<CreateBookRequest, BookDto>
+internal class CreateEndpoint : Endpoint<Models.CreateBookRequest, BookDto>
 {
     private readonly IBookService _bookService;
 
@@ -17,9 +17,9 @@ internal class CreateEndpoint : Endpoint<CreateBookRequest, BookDto>
         AllowAnonymous();
     }
 
-    public override async Task HandleAsync(CreateBookRequest request, CancellationToken cancellationToken)
+    public override async Task HandleAsync(Models.CreateBookRequest request, CancellationToken cancellationToken)
     {
-        var bookDto = CreateBookRequest.ToBookDto(request);
+        var bookDto = Models.CreateBookRequest.ToBookDto(request);
 
         await _bookService.CreateAsync(bookDto);
 

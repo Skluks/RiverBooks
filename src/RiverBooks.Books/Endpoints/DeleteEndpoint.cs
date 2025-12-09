@@ -2,7 +2,7 @@
 
 namespace RiverBooks.Books.Endpoints;
 
-internal class DeleteEndpoint : Endpoint<DeleteBookRequest>
+internal class DeleteEndpoint : Endpoint<Models.DeleteBookRequest>
 {
     private readonly IBookService _bookService;
 
@@ -17,7 +17,7 @@ internal class DeleteEndpoint : Endpoint<DeleteBookRequest>
         AllowAnonymous();
     }
 
-    public override async Task HandleAsync(DeleteBookRequest request, CancellationToken cancellationToken)
+    public override async Task HandleAsync(Models.DeleteBookRequest request, CancellationToken cancellationToken)
     {
         await _bookService.DeleteAsync(request.Id);
 

@@ -2,7 +2,7 @@
 
 namespace RiverBooks.Books.Endpoints;
 
-internal class GetByIdEndpoint : Endpoint<GetByIdRequest, BookDto>
+internal class GetByIdEndpoint : Endpoint<Models.GetByIdRequest, BookDto>
 {
     private readonly IBookService _bookService;
 
@@ -17,7 +17,7 @@ internal class GetByIdEndpoint : Endpoint<GetByIdRequest, BookDto>
         AllowAnonymous();
     }
 
-    public override async Task HandleAsync(GetByIdRequest request, CancellationToken cancellationToken)
+    public override async Task HandleAsync(Models.GetByIdRequest request, CancellationToken cancellationToken)
     {
         var book = await _bookService.GetByIdAsync(request.Id);
 

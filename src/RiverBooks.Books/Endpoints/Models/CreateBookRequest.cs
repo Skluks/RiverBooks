@@ -1,4 +1,4 @@
-﻿namespace RiverBooks.Books;
+﻿namespace RiverBooks.Books.Endpoints.Models;
 
 internal class CreateBookRequest
 {

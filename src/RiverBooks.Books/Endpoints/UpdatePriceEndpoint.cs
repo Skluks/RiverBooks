@@ -2,7 +2,7 @@
 
 namespace RiverBooks.Books.Endpoints;
 
-internal class UpdatePriceEndpoint : Endpoint<UpdatePriceRequest>
+internal class UpdatePriceEndpoint : Endpoint<Models.UpdatePriceRequest>
 {
     private readonly IBookService _bookService;
 
@@ -17,7 +17,7 @@ internal class UpdatePriceEndpoint : Endpoint<UpdatePriceRequest>
         AllowAnonymous();
     }
 
-    public override async Task HandleAsync(UpdatePriceRequest request, CancellationToken cancellationToken)
+    public override async Task HandleAsync(Models.UpdatePriceRequest request, CancellationToken cancellationToken)
     {
         await _bookService.UpdatePriceAsync(request.Id, request.NewPrice);
 
