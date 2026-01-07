@@ -1,24 +1,45 @@
 using FastEndpoints;
+using FastEndpoints.Security;
+using FastEndpoints.Swagger;
 using RiverBooks.Books;
+using RiverBooks.Users;
+using Serilog;
+using ILogger = Serilog.ILogger;
 
-var builder = WebApplication.CreateBuilder(args);
+ILogger logger = Log.Logger = new LoggerConfiguration()
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .CreateLogger();
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+logger.Information("Starting Web Host");
 
-var configurationManager = builder.Configuration;
-builder.Services.AddBookService(configurationManager);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddFastEndpoints();
+builder.Host.UseSerilog((_, config) =>
+    config.ReadFrom.Configuration(builder.Configuration));
 
-var app = builder.Build();
+ConfigurationManager configurationManager = builder.Configuration;
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+builder.Services.AddBookService(configurationManager, logger);
+builder.Services.AddUserService(configurationManager, logger);
 
-app.UseHttpsRedirection();
-app.UseFastEndpoints();
+builder.Services.AddFastEndpoints()
+    .AddAuthenticationJwtBearer(o =>
+    {
+        o.SigningKey = builder.Configuration["Auth.JwtSecret"];
+    })
+    .AddAuthorization()
+    .SwaggerDocument();
+
+WebApplication app = builder.Build();
+
+app.UseAuthentication()
+    .UseAuthorization();
+
+app.UseFastEndpoints()
+    .UseSwaggerGen();
+
+app.UseOpenApi();
+app.UseSwaggerUI();
+
 app.Run();

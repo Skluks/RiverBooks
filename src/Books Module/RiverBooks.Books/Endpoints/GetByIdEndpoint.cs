@@ -19,7 +19,7 @@ internal class GetByIdEndpoint : Endpoint<Models.GetByIdRequest, BookDto>
 
     public override async Task HandleAsync(Models.GetByIdRequest request, CancellationToken cancellationToken)
     {
-        var book = await _bookService.GetByIdAsync(request.Id);
+        BookDto book = await _bookService.GetByIdAsync(request.Id);
 
         Response = book;
     }

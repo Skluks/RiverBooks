@@ -13,13 +13,13 @@ internal class ListEndpoint : EndpointWithoutRequest<Models.ListBooksResponse>
 
     public override void Configure()
     {
-        Get("books");
+        Get("/books");
         AllowAnonymous();
     }
 
     public override async Task HandleAsync(CancellationToken ct)
     {
-        var books = await _bookService.ListAsync();
+        List<BookDto> books = await _bookService.ListAsync();
 
         await Send.OkAsync(new Models.ListBooksResponse { Books = books }, ct);
     }

@@ -13,7 +13,7 @@ internal class CreateEndpoint : Endpoint<Models.CreateBookRequest, BookDto>
 
     public override void Configure()
     {
-        Post("books");
+        Post("/books");
         AllowAnonymous();
     }
 
