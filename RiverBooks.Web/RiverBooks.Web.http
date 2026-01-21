@@ -1,4 +1,4 @@
-@RiverBooks.Web_HostAddress = https://localhost:7179
+@RiverBooks.Web_HostAddress = https://localhost:5125
 
 GET {{RiverBooks.Web_HostAddress}}/books
 Accept: application/json
@@ -50,8 +50,8 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "email":"steve@test.com",
-  "password":"Pass@word1"
+  "email": "steve@test.com",
+  "password": "Pass@word1"
 }
 
 ###
@@ -61,8 +61,8 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "email":"steve@test.com",
-  "password":"Pass@word1"
+  "email": "steve@test.com",
+  "password": "Pass@word1"
 }
 
 ###
@@ -76,8 +76,8 @@ Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-  "bookId":"a89f6cd7-4693-457b-9009-02205dbbfe45",
-  "quantity":1
+  "bookId": "a89f6cd7-4693-457b-9009-02205dbbfe45",
+  "quantity": 1
 }
 
 ###
